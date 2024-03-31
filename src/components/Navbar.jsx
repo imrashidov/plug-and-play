@@ -16,7 +16,6 @@ const Navbar = () => {
           <ul>
             <Link>Home</Link>
             <Link>About</Link>
-            <Link>Store</Link>
             <Link>Contact</Link>
           </ul>
           <div className="nav-tools">
