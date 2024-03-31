@@ -20,14 +20,14 @@ const Navbar = () => {
             <Link>Contact</Link>
           </ul>
           <div className="nav-tools">
+            <Link href="/">
+              <FiLogIn />
+            </Link>
             <button href="/">
               <FiSearch />
             </button>
             <Link href="/">
               <FiShoppingCart />
-            </Link>
-            <Link href="/">
-              <FiLogIn />
             </Link>
           </div>
         </div>
