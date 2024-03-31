@@ -9,12 +9,10 @@ const Categories = () => {
         <h4 className="categories-title">Categories</h4>
         <ul>
           {CategoriesData.map((category) => (
-            <li key={category.id} className="">
+            <li key={category.id} className="categories-link">
               <category.icon className="categories-icon" />
-              <div className="categories-link">
-                <Link>{category.name}</Link>
-                <FaChevronRight />
-              </div>
+              <Link>{category.name}</Link>
+              <FaChevronRight className="categories-chevron" />
             </li>
           ))}
         </ul>

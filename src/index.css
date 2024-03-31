@@ -5,7 +5,6 @@
 body {
   @apply bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-dark-gradient from-15% via-dark-second-gradient via-65% to-dark-third-gradient to-85% bg-no-repeat h-full text-white;
 }
-/* bg-gradient-to-r from-dark-gradient from-15% via-dark-second-gradient via-65% to-dark-third-gradient to-85% */
 .container {
   @apply mx-auto px-3 py-10;
 }
@@ -57,7 +56,7 @@ button {
   @apply flex items-center;
 }
 .categories-link {
-  @apply w-full flex items-center justify-between;
+  @apply w-full flex justify-start;
 }
 .categories-link:hover {
   @apply text-gray-400 transition-all duration-300 cursor-pointer;
@@ -66,10 +65,10 @@ button {
   @apply mr-2 text-2xl;
 }
 .categories-link a {
-  @apply text-xl;
+  @apply text-xl  mr-12;
 }
-.categories-link svg {
-  @apply ml-10;
+.categories-chevron {
+  @apply ml-auto;
 }
 /* Hero - Categories Section End */
 
