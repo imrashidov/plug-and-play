@@ -1,5 +1,11 @@
+import Hero from "../components/Hero";
+
 const Home = () => {
-  return <div className="h-screen">Home</div>;
+  return (
+    <section id="slider" className="h-screen">
+      <Hero />
+    </section>
+  );
 };
 
 export default Home;
