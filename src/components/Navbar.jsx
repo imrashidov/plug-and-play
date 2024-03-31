@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { FiLogIn } from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
+import { FiShoppingCart } from "react-icons/fi";
+
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -8,7 +11,7 @@ const Navbar = () => {
       <div className="nav-container">
         <div className="nav-main">
           <Link to="/">
-            <img src={logo} alt="logo" className="h-14" />
+            <img src={logo} alt="logo" />
           </Link>
           <ul>
             <Link>Home</Link>
@@ -16,10 +19,17 @@ const Navbar = () => {
             <Link>Store</Link>
             <Link>Contact</Link>
           </ul>
-          <button>
-            <p>Login</p>
-            <FiLogIn />
-          </button>
+          <div className="nav-tools">
+            <button href="/">
+              <FiSearch />
+            </button>
+            <Link href="/">
+              <FiShoppingCart />
+            </Link>
+            <Link href="/">
+              <FiLogIn />
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

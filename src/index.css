@@ -18,12 +18,19 @@ nav ul {
   @apply flex gap-4 self-center;
 }
 nav img {
-  @apply invert hover:scale-90;
+  @apply invert hover:scale-90 h-14;
 }
 .nav-container {
   @apply flex justify-center py-4;
 }
 .nav-main {
   @apply bg-white/[.06] flex justify-between w-2/4 px-5 py-3 rounded-3xl;
+}
+.nav-tools {
+  @apply flex self-center gap-3;
+}
+.nav-tools a,
+button {
+  @apply text-xl;
 }
 /* Navbar End */
