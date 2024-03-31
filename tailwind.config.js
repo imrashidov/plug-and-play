@@ -7,8 +7,9 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
       colors: {
-        "dark-gradient": "#170E13",
-        "dark-second-gradient": "#7A7ADB",
+        "dark-gradient": "#063669",
+        "dark-second-gradient": "#06254b",
+        "dark-third-gradient": "#020617",
       },
     },
   },
