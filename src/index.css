@@ -43,32 +43,42 @@ button {
 /* Hero Section Start */
 
 /* Hero - Categories Section Start */
+
 .categories-main {
   @apply bg-slate-950/[0.7] px-4 py-2 rounded-lg;
 }
 .categories-title {
   @apply mb-2 p-1 text-xl border-b-2 border-gray-400 rounded-sm;
 }
-#categories ul {
+.categories-all {
   @apply flex flex-col gap-3 relative;
 }
-#categories ul li {
+.categories-content ul {
   @apply flex items-center;
 }
-.categories-link {
-  @apply w-full flex justify-start;
+.categories-name {
+  @apply flex items-center w-full text-xl gap-2;
 }
-.categories-link:hover {
-  @apply text-gray-400 transition-all duration-300 cursor-pointer;
+.categories-name:hover {
+  @apply text-gray-400 cursor-pointer transition-all duration-300;
+}
+.categories-name p {
+  @apply mr-10;
 }
 .categories-icon {
   @apply mr-2 text-2xl;
 }
-.categories-link a {
-  @apply text-xl  mr-12;
-}
 .categories-chevron {
-  @apply ml-auto;
+  @apply ml-auto transition-transform;
+}
+.categories-active {
+  @apply rotate-90;
+}
+.categories-item a {
+  @apply m-0 text-xl flex transition-transform;
+}
+.categories-item a:hover {
+  @apply text-gray-400 transition-all duration-300;
 }
 /* Hero - Categories Section End */
 

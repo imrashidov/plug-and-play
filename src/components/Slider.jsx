@@ -34,7 +34,7 @@ const Slider = () => {
           <img
             src={slide.img}
             key={slide.id}
-            alt="Slider Photo"
+            alt="Slider"
             className={currentSlide === index ? "slider-image" : "hidden"}
           />
         ))}
