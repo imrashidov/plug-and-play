@@ -45,8 +45,16 @@ button {
 /* Navbar End */
 
 /* Hero Section Start */
+#hero {
+  @apply bg-hero-pattern bg-left-top bg-cover h-full;
+}
+.hero-main {
+  @apply flex gap-52 items-center py-24 px-10 my-20;
+}
 
-/* Hero - Categories Section Start */
+/* Hero Section End */
+
+/* Categories Section Start */
 
 .categories-main {
   @apply bg-dark-secondary px-4 py-2 rounded-lg;
@@ -84,9 +92,9 @@ button {
 .categories-item a:hover {
   @apply text-gray-400 transition-all duration-300;
 }
-/* Hero - Categories Section End */
+/* Categories Section End */
 
-/* Hero - Slider Section Start */
+/* Slider Section Start */
 .slider-main {
   @apply bg-dark-secondary rounded-lg relative flex justify-center items-center;
 }
@@ -102,6 +110,4 @@ button {
 .slider-image {
   @apply p-2 w-screen rounded-2xl;
 }
-/* Hero - Slider Section End */
-
-/* Hero Section End */
+/*Slider Section End */

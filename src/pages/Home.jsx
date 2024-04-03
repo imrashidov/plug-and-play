@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 
 const Home = () => {
   return (
-    <section id="slider" className="h-screen">
+    <section id="Home" className="h-screen">
       <Hero />
     </section>
   );
