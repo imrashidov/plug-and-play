@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FiLogIn } from "react-icons/fi";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
 
