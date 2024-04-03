@@ -51,7 +51,33 @@ button {
 .hero-main {
   @apply flex gap-52 items-center py-24 px-10 my-20;
 }
-
+.hero-text {
+  @apply w-full py-10 px-20 flex flex-col gap-7;
+}
+.hero-text h3 {
+  @apply text-3xl;
+}
+.hero-text p {
+  @apply text-gray-500;
+}
+.hero-text__buttons {
+  @apply flex gap-10 w-fit;
+}
+.hero-text button {
+  @apply text-lg bg-dark-secondary/[0.6] hover:bg-dark-secondary px-3 py-2 rounded-lg;
+}
+.hero-photos {
+  @apply p-2 rounded-2xl relative max-h-[40rem] z-0;
+}
+.hero-photo1 {
+  @apply w-[50rem] mt-24;
+}
+.hero-photo2 {
+  @apply w-52 absolute top-3 left-3 z-[-1];
+}
+.hero-photo3 {
+  @apply w-48 absolute bottom-0 right-0 z-20;
+}
 /* Hero Section End */
 
 /* Categories Section Start */
