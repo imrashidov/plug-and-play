@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-dark-gradient from-15% via-dark-second-gradient via-65% to-dark-third-gradient to-85% bg-no-repeat h-full text-white;
+  @apply bg-dark-primary bg-no-repeat h-full text-white;
 }
 .container {
   @apply mx-auto px-3 py-10;
@@ -29,7 +29,7 @@ nav img {
   @apply flex justify-center py-4;
 }
 .nav-main {
-  @apply bg-slate-950/[0.7] flex justify-between w-2/4 px-5 py-3 rounded-3xl;
+  @apply bg-dark-secondary flex justify-between w-2/4 px-5 py-3 rounded-3xl;
 }
 .nav-tools {
   @apply flex self-center gap-3;
@@ -45,7 +45,7 @@ button {
 /* Hero - Categories Section Start */
 
 .categories-main {
-  @apply bg-slate-950/[0.7] px-4 py-2 rounded-lg;
+  @apply bg-dark-secondary px-4 py-2 rounded-lg;
 }
 .categories-title {
   @apply mb-2 p-1 text-xl border-b-2 border-gray-400 rounded-sm;
@@ -84,10 +84,10 @@ button {
 
 /* Hero - Slider Section Start */
 .slider-main {
-  @apply bg-slate-950/[0.7] rounded-lg relative flex justify-center items-center;
+  @apply bg-dark-secondary rounded-lg relative flex justify-center items-center;
 }
 .slider-buttons button {
-  @apply bg-slate-950/[0.7] hover:bg-slate-950/[0.5] rounded-full p-2 transition-all duration-300;
+  @apply bg-dark-secondary hover:bg-dark-secondary/[0.7] rounded-full p-2 transition-all duration-300;
 }
 .slider-buttons__left {
   @apply absolute left-5;

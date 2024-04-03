@@ -7,9 +7,10 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
       colors: {
-        "dark-gradient": "#063669",
-        "dark-second-gradient": "#06254b",
-        "dark-third-gradient": "#020617",
+        "dark-primary": "#121212",
+        "dark-secondary": "#2A2A2A",
+        "light-primary": "#F3F5FE",
+        "light-secondary": "#FCFCFC",
       },
     },
   },
