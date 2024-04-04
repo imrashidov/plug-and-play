@@ -23,7 +23,7 @@ nav ul {
   @apply flex gap-4 self-center;
 }
 nav img {
-  @apply invert hover:scale-90 h-14;
+  @apply invert hover:scale-90 h-11;
 }
 .nav-container {
   @apply flex justify-center pb-4;
