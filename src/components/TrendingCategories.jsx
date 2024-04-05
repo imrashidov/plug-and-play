@@ -6,7 +6,7 @@ const TrendingCategories = () => {
     <section id="Trend">
       <div className="container">
         <div className="trending-main">
-          <h2 className="trending-heading">Trending Categories</h2>
+          <h2 className="section-title">Trending Categories</h2>
           <div className="trending-categories">
             {TrendingCategoriesData.categories.map((category) => (
               <div key={category.id} className="trending-category group">

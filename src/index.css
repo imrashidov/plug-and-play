@@ -81,10 +81,10 @@ button {
 /* Hero Section End */
 
 /* Trending Categories Start */
-.trending-heading {
+.section-title {
   @apply text-2xl pb-10;
 }
-.trending-heading::before {
+.section-title::before {
   @apply content-[''] w-20 border-2 border-dark-secondary mr-2 rounded-sm;
 }
 .trending-categories {
@@ -145,6 +145,7 @@ button {
 /* Categories Section End */
 
 /* Slider Section Start */
+
 .slider-main {
   @apply bg-dark-secondary rounded-lg relative flex justify-center items-center;
 }
@@ -158,6 +159,6 @@ button {
   @apply absolute right-5;
 }
 .slider-image {
-  @apply p-2 w-screen rounded-2xl;
+  @apply p-2 w-screen rounded-2xl max-h-[40rem] object-right;
 }
 /*Slider Section End */

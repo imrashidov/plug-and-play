@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(3);
+  const [currentSlide, setCurrentSlide] = useState(2);
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === SliderData.length - 1 ? 0 : prevSlide + 1
