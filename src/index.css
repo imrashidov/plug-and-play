@@ -58,13 +58,13 @@ button {
   @apply text-3xl;
 }
 .hero-text p {
-  @apply text-gray-500;
+  @apply text-gray-400;
 }
 .hero-text__buttons {
   @apply flex gap-10 w-fit;
 }
 .hero-text button {
-  @apply text-lg bg-dark-secondary/[0.6] hover:bg-dark-secondary px-3 py-2 rounded-lg;
+  @apply text-lg bg-dark-secondary/[0.6] hover:bg-dark-secondary px-3 py-2 rounded-lg transition-all duration-300;
 }
 .hero-photos {
   @apply p-2 rounded-2xl relative max-h-[40rem] z-0;
@@ -79,6 +79,30 @@ button {
   @apply w-48 absolute bottom-0 right-0 z-20;
 }
 /* Hero Section End */
+
+/* Trending Categories Start */
+.trending-heading {
+  @apply text-2xl pb-10;
+}
+.trending-heading::before {
+  @apply content-[''] w-20 border-2 border-dark-secondary mr-2 rounded-sm;
+}
+.trending-categories {
+  @apply flex justify-between;
+}
+.trending-category {
+  @apply flex flex-col items-center gap-4;
+}
+.trending-category__img {
+  @apply bg-dark-secondary group-hover:scale-105 cursor-pointer rounded-lg p-4 transition-transform duration-300;
+}
+.trending-category__img img {
+  @apply w-52 h-52 object-contain;
+}
+.trending-category a {
+  @apply transition-all duration-300;
+}
+/* Trending Categories End */
 
 /* Categories Section Start */
 

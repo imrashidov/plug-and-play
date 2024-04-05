@@ -1,9 +1,11 @@
 import Hero from "../components/Hero";
+import TrendingCategories from "../components/TrendingCategories";
 
 const Home = () => {
   return (
-    <section id="Home" className="h-screen">
+    <section id="Home">
       <Hero />
+      <TrendingCategories />
     </section>
   );
 };
