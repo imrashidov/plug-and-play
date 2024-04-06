@@ -161,4 +161,13 @@ button {
 .slider-image {
   @apply p-2 w-screen rounded-2xl max-h-[40rem] object-right;
 }
+.slider-pages {
+  @apply absolute bottom-5 flex gap-2;
+}
+.slider-page {
+  @apply w-2 h-2 rounded-full bg-white transition-all duration-300 border-2 p-1 border-dark-secondary;
+}
+.slider-page-active {
+  @apply bg-dark-primary scale-150 transition-all duration-300;
+}
 /*Slider Section End */

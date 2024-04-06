@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(2);
+  const [currentSlide, setCurrentSlide] = useState(3);
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === SliderData.length - 1 ? 0 : prevSlide + 1
@@ -15,6 +15,9 @@ const Slider = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? SliderData.length - 1 : prevSlide - 1
     );
+  };
+  const handlePageChange = (index) => {
+    setCurrentSlide(index);
   };
   return (
     <section id="slider">
@@ -38,6 +41,17 @@ const Slider = () => {
             className={currentSlide === index ? "slider-image" : "hidden"}
           />
         ))}
+        <div className="slider-pages">
+          {SliderData.map((page, index) => (
+            <button
+              key={page.id}
+              onClick={() => handlePageChange(index)}
+              className={`slider-page ${
+                currentSlide === index ? "slider-page-active" : ""
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
