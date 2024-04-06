@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import TrendingCategories from "../components/TrendingCategories";
 import Categories from "../components/Categories";
+import BestSellingProducts from "../components/BestSellingProducts";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <TrendingCategories />
+      <BestSellingProducts />
     </section>
   );
 };

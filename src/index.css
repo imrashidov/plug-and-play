@@ -88,7 +88,7 @@ button {
   @apply content-[''] w-20 border-2 border-dark-secondary mr-2 rounded-sm;
 }
 .trending-categories {
-  @apply flex justify-between;
+  @apply flex justify-between gap-2;
 }
 .trending-category {
   @apply flex flex-col items-center gap-4;
@@ -177,3 +177,21 @@ button {
   @apply bg-dark-primary scale-150 transition-all duration-300;
 }
 /*Slider Section End */
+
+/* Best Selling Products Section Start */
+.bsp-products {
+  @apply flex justify-between gap-4;
+}
+.bsp-product {
+  @apply p-3 bg-dark-secondary rounded-lg cursor-pointer hover:scale-105 transition-all duration-300;
+}
+.bsp-product img {
+  @apply w-44 h-44 object-scale-down;
+}
+.bsp-product__info {
+  @apply mt-3;
+}
+.bsp-product__info a {
+  @apply hover:text-gray-400 transition-all duration-300;
+}
+/* Best Selling Products Section End */
