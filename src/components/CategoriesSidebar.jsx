@@ -37,6 +37,7 @@ const CategoriesSidebar = () => {
                     key={item.id}
                     className={selected === category.id ? "" : "!hidden"}
                   >
+                    {item.icon && <item.icon className="category-item-icon" />}
                     {item.name}
                   </Link>
                 ))}

@@ -119,7 +119,7 @@ button {
   @apply flex items-center;
 }
 .categories-name {
-  @apply flex items-center w-full text-xl gap-2;
+  @apply flex items-center w-full text-xl gap-2 mb-2;
 }
 .categories-name:hover {
   @apply text-gray-400 cursor-pointer transition-all duration-300;
@@ -136,11 +136,17 @@ button {
 .categories-active {
   @apply rotate-90;
 }
+.categories-item {
+  @apply flex flex-col gap-2;
+}
 .categories-item a {
-  @apply m-0 text-xl flex transition-transform;
+  @apply m-0 text-lg flex transition-transform;
 }
 .categories-item a:hover {
   @apply text-gray-400 transition-all duration-300;
+}
+.category-item-icon {
+  @apply self-center ml-3 mr-2;
 }
 /* Categories Section End */
 
