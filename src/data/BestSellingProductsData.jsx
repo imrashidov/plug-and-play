@@ -17,7 +17,7 @@ const BestSellingProductsData = [
   {
     id: 2,
     image: bsp2,
-    name: "Xbox Elite Wireless Controller Series 2 – Core",
+    name: "Xbox Elite Wireless Controller – Core",
     price: 200,
   },
   {
@@ -42,13 +42,13 @@ const BestSellingProductsData = [
   {
     id: 7,
     image: bsp7,
-    name: "ASUS ROG RTX 4090 Strix Gaming Graphics Card",
+    name: "ASUS ROG RTX 4090 Strix GPU",
     price: 700,
   },
   {
     id: 8,
     image: bsp8,
-    name: "SteelSeries Arctis 7P+ Wireless Gaming Headset",
+    name: "SteelSeries Arctis 7P+ Wireless",
     price: 299,
   },
 ];
