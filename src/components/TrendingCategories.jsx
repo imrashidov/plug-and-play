@@ -9,11 +9,14 @@ const TrendingCategories = () => {
           <h2 className="section-title">Trending Categories</h2>
           <div className="trending-categories">
             {TrendingCategoriesData.categories.map((category) => (
-              <div key={category.id} className="trending-category group">
-                <div className="trending-category__img">
+              <div
+                key={category.id}
+                className="trending-category group/trending "
+              >
+                <div className="trending-category__img ">
                   <img src={category.image} alt={category.name} />
                 </div>
-                <Link>{category.name}</Link>
+                <Link className="trending-category__link">{category.name}</Link>
               </div>
             ))}
           </div>

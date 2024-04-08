@@ -21,7 +21,7 @@ const BestSellingProducts = () => {
           <h2 className="section-title">Best Selling Products</h2>
           <div className="bsp-products">
             {BestSellingProductsData.map((product) => (
-              <div key={product.id} className="bsp-product-main group">
+              <div key={product.id} className="bsp-product-main group/bsp">
                 <button onClick={() => handleFavoriteChange(product.id)}>
                   {favorite.includes(product.id) ? (
                     <MdFavorite className="favorite-icon" />

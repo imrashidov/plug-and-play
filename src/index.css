@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply no-underline;
+}
+
 body {
   @apply bg-dark-primary bg-no-repeat h-full text-white mx-14;
 }
@@ -94,13 +98,13 @@ button {
   @apply flex flex-col items-center gap-4;
 }
 .trending-category__img {
-  @apply bg-dark-secondary group-hover:scale-105 cursor-pointer rounded-lg p-4 transition-transform duration-300;
+  @apply bg-dark-secondary  cursor-pointer rounded-lg p-4 transition-transform duration-300;
 }
 .trending-category__img img {
-  @apply w-52 h-52 object-contain;
+  @apply w-52 h-52 object-contain group-hover/trending:scale-110;
 }
-.trending-category a {
-  @apply transition-all duration-300;
+.trending-category__link {
+  @apply transition-all duration-300 group-hover/trending:text-gray-400;
 }
 /* Trending Categories End */
 
@@ -189,16 +193,16 @@ button {
   @apply flex justify-between gap-4 w-full;
 }
 .bsp-product {
-  @apply p-3 bg-dark-secondary rounded-lg cursor-pointer group-hover:scale-105 transition-all duration-300;
+  @apply p-3 bg-dark-secondary rounded-lg cursor-pointer  transition-all duration-300;
 }
 
 .bsp-product img {
-  @apply w-44 h-44 object-scale-down;
+  @apply w-44 h-44 object-scale-down group-hover/bsp:scale-110;
 }
 .bsp-product__info {
   @apply mt-3  overflow-hidden text-ellipsis;
 }
 .bsp-product__info a {
-  @apply transition-all duration-300 group-hover:text-gray-400;
+  @apply transition-all duration-300 group-hover/bsp:text-gray-400;
 }
 /* Best Selling Products Section End */
