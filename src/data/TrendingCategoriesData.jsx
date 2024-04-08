@@ -3,6 +3,7 @@ import mobile from "../assets/TrendingCategories/trend-phone.png";
 import monitor from "../assets/TrendingCategories/trend-monitor.png";
 import mouse from "../assets/TrendingCategories/trend-mouse.png";
 import keyboard from "../assets/TrendingCategories/trend-keyboard.png";
+import headset from "../assets/TrendingCategories/trend-headset.png";
 
 const TrendingCategoriesData = {
   categories: [
@@ -30,6 +31,11 @@ const TrendingCategoriesData = {
       id: 5,
       name: "Keyboards",
       image: keyboard,
+    },
+    {
+      id: 6,
+      name: "Headsets",
+      image: headset,
     },
   ],
 };

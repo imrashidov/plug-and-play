@@ -5,6 +5,7 @@ import bsp4 from "../assets/BestSellingProducts/bsp4.png";
 import bsp5 from "../assets/BestSellingProducts/bsp5.png";
 import bsp6 from "../assets/BestSellingProducts/bsp6.png";
 import bsp7 from "../assets/BestSellingProducts/bsp7.webp";
+import bsp8 from "../assets/BestSellingProducts/bsp8.png";
 
 const BestSellingProductsData = [
   {
@@ -43,6 +44,12 @@ const BestSellingProductsData = [
     image: bsp7,
     name: "ASUS ROG RTX 4090 Strix Gaming Graphics Card",
     price: 700,
+  },
+  {
+    id: 8,
+    image: bsp8,
+    name: "SteelSeries Arctis 7P+ Wireless Gaming Headset",
+    price: 299,
   },
 ];
 
