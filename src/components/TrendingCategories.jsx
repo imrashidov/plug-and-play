@@ -13,9 +13,7 @@ const TrendingCategories = () => {
                 <div className="trending-category__img">
                   <img src={category.image} alt={category.name} />
                 </div>
-                <Link className="group-hover:text-gray-400">
-                  {category.name}
-                </Link>
+                <Link>{category.name}</Link>
               </div>
             ))}
           </div>
