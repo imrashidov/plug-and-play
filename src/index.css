@@ -234,3 +234,29 @@ button {
   @apply flex items-center w-full;
 }
 /* Daily Offers Section End */
+
+/* Banner Section Start */
+
+.banner-main {
+  @apply text-center flex  justify-center gap-20;
+}
+.banner-item {
+  @apply flex flex-col items-center p-3;
+}
+.banner-item span {
+  @apply bg-dark-secondary p-2 rounded-full w-20 h-20 flex items-center justify-center;
+}
+.banner-item-logo svg {
+  @apply w-full h-full p-2;
+}
+.banner-item-text {
+  @apply mt-7;
+}
+.banner-item-text h4 {
+  @apply uppercase text-xl;
+}
+.banner-item-text p {
+  @apply text-gray-400 text-sm;
+}
+
+/* Banner Section End */
