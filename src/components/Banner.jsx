@@ -31,7 +31,7 @@ const Banner = () => {
             </span>
             <div className="banner-item-text">
               <h4>Money Back Guarantee</h4>
-              <p>Return money withing 30 days</p>
+              <p>Return money within 30 days</p>
             </div>
           </div>
         </div>
