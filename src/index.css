@@ -206,3 +206,31 @@ button {
   @apply transition-all duration-300 group-hover/bsp:text-gray-400;
 }
 /* Best Selling Products Section End */
+
+/* Daily Offers Section Start */
+.daily-offers-main {
+  @apply bg-dark-secondary p-2 rounded-lg flex;
+}
+.daily-offers-left {
+  @apply flex flex-col justify-center p-10 w-full;
+}
+.daily-offers-left h2 {
+  @apply text-3xl;
+}
+.daily-offers-left p {
+  @apply text-gray-400;
+}
+
+.daily-offers-countdown {
+  @apply flex gap-5 w-fit mt-10;
+}
+.daily-offers-countdown__item {
+  @apply bg-dark-primary rounded-full  items-center justify-center flex flex-col p-2 w-20 h-20 text-sm text-center;
+}
+.daily-offers-main button {
+  @apply mt-10 w-fit px-3 py-2 bg-dark-primary rounded-lg shadow-dark-primary shadow-md hover:shadow-lg hover:shadow-dark-primary transition-all duration-300;
+}
+.daily-offers-img {
+  @apply flex items-center w-full;
+}
+/* Daily Offers Section End */
