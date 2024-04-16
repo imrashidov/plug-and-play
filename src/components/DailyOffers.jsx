@@ -8,7 +8,7 @@ const DailyOffers = () => {
     const interval = setInterval(() => {
       setTime((prevTime) => prevTime - 1);
     }, 1000);
-    return interval;
+    return () => clearInterval(interval);
   }, []);
 
   const hours = Math.floor(time / 3600);

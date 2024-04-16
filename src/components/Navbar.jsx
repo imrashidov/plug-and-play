@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
-
 import logo from "../assets/logo.png";
 
 const Navbar = () => {

@@ -260,3 +260,53 @@ button {
 }
 
 /* Banner Section End */
+
+/* Footer Section Start */
+footer a {
+  @apply hover:text-neutral-500 transition-all duration-200;
+}
+.footer-container-top {
+  @apply bg-dark-secondary py-5 px-5 rounded-lg relative;
+}
+.footer-main-top {
+  @apply flex gap-5 justify-between;
+}
+.footer-logo {
+  @apply h-fit shrink-0;
+}
+.footer-logo img {
+  @apply w-14 h-14 invert;
+}
+.footer-links-main {
+  @apply flex gap-20;
+}
+.footer-links {
+  @apply flex flex-col gap-2;
+}
+.footer-links h6,
+.footer-support h6 {
+  @apply text-gray-400 font-semibold mb-3;
+}
+.footer-support {
+  @apply flex flex-col gap-2;
+}
+.footer-socials {
+  @apply flex h-fit gap-3;
+}
+.social-links svg {
+  @apply text-gray-400  h-7 w-7 hover:fill-dark-primary transition-all duration-300;
+}
+.footer-container-bottom {
+  @apply border-t-2 mt-16 border-neutral-700 pt-2 flex justify-between gap-2;
+}
+.footer-container-bottom p {
+  @apply text-sm text-neutral-400;
+}
+.footer-terms {
+  @apply flex gap-3 text-sm text-gray-400;
+}
+.footer-terms a {
+  @apply text-gray-400 hover:text-neutral-500 transition-all duration-300;
+}
+
+/* Footer Section End */
