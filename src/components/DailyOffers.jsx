@@ -32,15 +32,15 @@ const DailyOffers = () => {
             <div className="daily-offers-countdown">
               <div className="daily-offers-countdown__item">
                 <span>{hours}</span>
-                <p>Hours</p>
+                <p>Hour{hours > 1 ? "s" : ""}</p>
               </div>
               <div className="daily-offers-countdown__item">
                 <span>{minutes}</span>
-                <p>Minutes</p>
+                <p>Minute{minutes > 1 ? "s" : ""}</p>
               </div>
               <div className="daily-offers-countdown__item">
                 <span>{seconds}</span>
-                <p>Seconds</p>
+                <p>Second{seconds > 1 ? "s" : ""}</p>
               </div>
             </div>
             <button>Buy Now</button>
