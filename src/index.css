@@ -315,58 +315,58 @@ footer a {
 /* Footer Section End */
 
 /* Auth Page Start */
-.auth-container {
+.login-container {
   @apply flex justify-center h-screen items-center p-2;
 }
-.auth-previous {
+.login-previous {
   @apply rounded-full bg-dark-secondary w-10 h-10 justify-center flex items-center absolute top-10 left-7;
 }
-.auth-main {
+.login-main {
   @apply bg-dark-secondary p-5 rounded-lg max-w-[30rem] w-full;
 }
-.auth-logo {
+.login-logo {
   @apply flex items-center gap-3 w-full;
 }
-.auth-text {
+.login-text {
   @apply mt-3;
 }
-.auth-text h2 {
+.login-text h2 {
   @apply text-2xl;
 }
-.auth-google {
+.login-google {
   @apply flex justify-center mt-5 w-full;
 }
-.auth-google button {
+.login-google button {
   @apply bg-transparent border rounded-sm text-base text-white p-2 flex items-center justify-center gap-2 hover:shadow-xl transition-all duration-300 w-full;
 }
-.auth-main form {
+.login-main form {
   @apply mt-5 flex flex-col gap-10 h-full;
 }
-.auth-login {
+.login-input {
   @apply w-full flex flex-col;
 }
-.auth-login input {
+.login-input input {
   @apply bg-neutral-600 rounded-sm h-10 px-2 py-6 outline-none placeholder:text-gray-400/25;
 }
-.auth-remember {
+.login-remember {
   @apply flex gap-1 mt-[-2rem];
 }
-.auth-remember input {
+.login-remember input {
   @apply checked:accent-neutral-700;
 }
-.auth-remember label {
+.login-remember label {
   @apply text-sm text-neutral-400;
 }
-.auth-remember a {
+.login-remember a {
   @apply ml-auto text-sm text-neutral-400 hover:text-neutral-300 transition-colors duration-300;
 }
-.auth-main form button {
+.login-main form button {
   @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
 }
-.auth-register {
+.login-register {
   @apply flex gap-2 justify-center mt-10;
 }
-.auth-register a {
+.login-register a {
   @apply text-neutral-400 hover:text-neutral-300 transition-colors duration-300;
 }
 /* Auth Page End */

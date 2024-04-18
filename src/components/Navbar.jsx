@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to="/">
               <FiShoppingCart />
             </Link>
-            <Link className="nav-sign" to="/auth">
+            <Link className="nav-sign" to="/login">
               Sign in
             </Link>
           </div>

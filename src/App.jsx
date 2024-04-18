@@ -2,18 +2,18 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Auth from "./pages/Auth";
+import Login from "./pages/Login";
 
 function App() {
   const location = useLocation();
   return (
     <>
-      {location.pathname !== "/auth" && <Navbar />}
+      {location.pathname !== "/login" && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/auth" element={<Auth />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      {location.pathname !== "/auth" && <Footer />}
+      {location.pathname !== "/login" && <Footer />}
     </>
   );
 }
