@@ -1,16 +1,19 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Auth from "./pages/Auth";
 
 function App() {
+  const location = useLocation();
   return (
     <>
-      <Navbar />
+      {location.pathname !== "/auth" && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
-      <Footer />
+      {location.pathname !== "/auth" && <Footer />}
     </>
   );
 }

@@ -30,10 +30,12 @@ const Navbar = () => {
                 <FiSearch className="stroke-neutral-600 text-xl" />
               </i>
             </div>
-            <Link href="/">
+            <Link to="/">
               <FiShoppingCart />
             </Link>
-            <Link className="nav-sign">Sign in</Link>
+            <Link className="nav-sign" to="/auth">
+              Sign in
+            </Link>
           </div>
         </div>
       </div>
