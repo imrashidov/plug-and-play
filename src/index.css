@@ -13,10 +13,11 @@ body {
   @apply mx-auto px-3 py-10;
 }
 /* Navbar Start */
-nav button,
-img {
-  @apply hover:text-gray-400 transition-all duration-300 text-lg;
+nav {
+  @apply sticky top-0 z-[999];
 }
+nav button,
+img,
 nav a {
   @apply hover:text-gray-400 transition-all duration-300 text-lg;
 }
@@ -33,7 +34,7 @@ nav img {
   @apply flex justify-center pb-4;
 }
 .nav-main {
-  @apply bg-dark-secondary flex justify-start gap-10 w-full px-5 py-3 rounded-b-lg mx-14;
+  @apply bg-dark-secondary/95 flex justify-start gap-10 w-full px-5 py-3 rounded-b-lg mx-14;
 }
 .nav-tools {
   @apply flex gap-5 ml-auto items-center;
