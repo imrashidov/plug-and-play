@@ -315,7 +315,7 @@ footer a {
 
 /* Footer Section End */
 
-/* Auth Page Start */
+/* Login Page Start */
 .login-container {
   @apply flex justify-center h-screen items-center p-2;
 }
@@ -328,17 +328,26 @@ footer a {
 .login-logo {
   @apply flex items-center gap-3 w-full;
 }
+.login-logo img {
+  @apply w-7 h-7 invert;
+}
 .login-text {
   @apply mt-3;
 }
 .login-text h2 {
   @apply text-2xl;
 }
+.login-text p {
+  @apply text-sm w-[20rem] text-neutral-400 mt-2;
+}
 .login-google {
   @apply flex justify-center mt-5 w-full;
 }
 .login-google button {
   @apply bg-transparent border rounded-sm text-base text-white p-2 flex items-center justify-center gap-2 hover:shadow-xl transition-all duration-300 w-full;
+}
+.login-divider {
+  @apply text-center mt-5 text-neutral-400;
 }
 .login-main form {
   @apply mt-5 flex flex-col gap-10 h-full;
@@ -370,4 +379,8 @@ footer a {
 .login-register a {
   @apply text-neutral-400 hover:text-neutral-300 transition-colors duration-300;
 }
-/* Auth Page End */
+/* Login Page End */
+
+/* Forgot Password Page Start */
+
+/* Forgot Password Page End */

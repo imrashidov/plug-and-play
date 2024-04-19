@@ -13,7 +13,7 @@ const Login = () => {
         </button>
         <div className="login-main">
           <div className="login-logo">
-            <img src={logo} alt="Brand Logo" className="w-7 h-7 invert" />
+            <img src={logo} alt="Brand Logo" />
             <p>Plug & Play</p>
           </div>
           <div className="login-text">
@@ -37,7 +37,7 @@ const Login = () => {
             <div className="login-remember">
               <input type="checkbox" value="RememberMe" id="rememberMe" />
               <label htmlFor="rememberMe">Remember me</label>
-              <Link>Forgot password?</Link>
+              <Link to="/login/forgot-password">Forgot password?</Link>
             </div>
             <button>Login</button>
           </form>
