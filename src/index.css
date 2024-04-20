@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 * {
   @apply no-underline;
 }
@@ -381,6 +387,43 @@ footer a {
 }
 /* Login Page End */
 
-/* Forgot Password Page Start */
-
-/* Forgot Password Page End */
+/* Register Page Start */
+.register-container {
+  @apply flex justify-center h-screen items-center p-2;
+}
+.register-main {
+  @apply bg-dark-secondary p-5 rounded-lg !max-w-[40rem] w-full;
+}
+.register-main form {
+  @apply mt-5 flex flex-col gap-5 h-full;
+}
+.register-main form button {
+  @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
+}
+.register-details {
+  @apply grid grid-cols-2 gap-2;
+}
+.register-input {
+  @apply w-full flex flex-col;
+}
+.register-input input {
+  @apply bg-neutral-600 rounded-sm h-10 px-2 py-6 outline-none placeholder:text-gray-400/25;
+}
+.register-privacy {
+  @apply flex gap-1;
+}
+.register-privacy input {
+  @apply checked:accent-neutral-700;
+}
+.register-privacy label {
+  @apply text-sm text-neutral-400;
+}
+.register-privacy label a {
+  @apply text-blue-300 hover:text-blue-400 transition-colors duration-300;
+}
+.register-gender {
+  @apply w-fit;
+}
+.register-gender select {
+  @apply bg-neutral-600 rounded-sm px-2 py-1 w-full mt-1 focus:outline-none;
+}

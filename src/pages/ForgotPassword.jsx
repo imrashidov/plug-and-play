@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const ForgotPassword = () => {
   const navigate = useNavigate();
   return (
-    <section id="login">
+    <section id="forget-password">
       <div className="login-container">
         <button onClick={() => navigate(-1)} className="login-previous">
           <FaChevronLeft />

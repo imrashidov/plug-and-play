@@ -43,7 +43,7 @@ const Login = () => {
           </form>
           <div className="login-register">
             <p>Not registered yet?</p>
-            <Link>Create an account</Link>
+            <Link to="/login/register">Create an account</Link>
           </div>
         </div>
       </div>

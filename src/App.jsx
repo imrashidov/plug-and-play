@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
+import Register from "./pages/Register";
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login/forgot-password" element={<ForgotPassword />} />
+        <Route path="/login/register" element={<Register />} />
       </Routes>
       {location.pathname.includes("/login") || <Footer />}
     </>
