@@ -8,7 +8,7 @@ import { registerSchema } from "../schema/yup";
 
 const onSubmit = async (values, actions) => {
   await new Promise((resolve) => {
-    setTimeout(resolve, 1000);
+    setTimeout(resolve, 2000);
   });
   actions.resetForm();
 };
@@ -170,7 +170,7 @@ const Register = () => {
             </div>
             <button
               disabled={isSubmitting}
-              className={`auth-button ${isSubmitting ? "disabledButton" : ""}`}
+              className={`auth-button ${isSubmitting ? "disabled-button" : ""}`}
               type="submit"
             >
               Register
