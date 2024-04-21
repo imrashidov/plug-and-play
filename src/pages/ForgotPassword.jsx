@@ -25,7 +25,7 @@ const ForgotPassword = () => {
               <label htmlFor="email">Email</label>
               <input type="email" placeholder="frashidov@gmail.com" />
             </div>
-            <button>Submit</button>
+            <button className="auth-button">Submit</button>
           </form>
           <div className="login-divider">or</div>
           <div className="login-google">

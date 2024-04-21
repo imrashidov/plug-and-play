@@ -7,6 +7,26 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #292929;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191919;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 * {
   @apply no-underline;
@@ -328,6 +348,9 @@ footer a {
 .login-previous {
   @apply rounded-full bg-dark-secondary w-10 h-10 justify-center flex items-center absolute top-10 left-7;
 }
+.login-previous.hide {
+  @apply hidden;
+}
 .login-main {
   @apply bg-dark-secondary p-5 rounded-lg max-w-[30rem] w-full;
 }
@@ -376,9 +399,7 @@ footer a {
 .login-remember a {
   @apply ml-auto text-sm text-neutral-400 hover:text-neutral-300 transition-colors duration-300;
 }
-.login-main form button {
-  @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
-}
+
 .login-register {
   @apply flex gap-2 justify-center mt-10;
 }
@@ -396,9 +417,6 @@ footer a {
 }
 .register-main form {
   @apply mt-5 flex flex-col gap-5 h-full;
-}
-.register-main form button {
-  @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
 }
 .register-details {
   @apply grid grid-cols-2 gap-2;
@@ -418,12 +436,49 @@ footer a {
 .register-privacy label {
   @apply text-sm text-neutral-400;
 }
-.register-privacy label a {
-  @apply text-blue-300 hover:text-blue-400 transition-colors duration-300;
+.register-privacy label button {
+  @apply text-sm text-blue-300 hover:text-blue-400 transition-colors duration-300;
 }
 .register-gender {
   @apply w-fit;
 }
 .register-gender select {
   @apply bg-neutral-600 rounded-sm px-2 py-1 w-full mt-1 focus:outline-none;
+}
+.auth-button {
+  @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
+}
+/* Register Page End */
+.privacy-modal {
+  @apply invisible opacity-0 transition-all duration-300 ease-in-out;
+}
+.privacy-modal.show {
+  @apply visible opacity-100 transition-all duration-300;
+}
+.privacy-container {
+  @apply fixed  bg-white/20 w-full z-10 h-full justify-center flex px-5;
+}
+.privacy-main {
+  @apply w-[35rem] bg-dark-secondary rounded-lg flex flex-col justify-center my-40;
+}
+.privacy-logo {
+  @apply flex items-center justify-center gap-3 w-full my-5;
+}
+.privacy-logo img {
+  @apply w-7 h-7 invert;
+}
+.privacy-logo h2 {
+  @apply text-xl font-semibold;
+}
+.privacy-text {
+  @apply px-5 overflow-auto;
+}
+.privacy-text h2 {
+  @apply text-xl underline;
+}
+.privacy-text p span {
+  @apply underline;
+}
+.privacy-main button {
+  @apply self-center  mt-3 bg-dark-primary rounded-lg text-xl w-fit p-2 m-2 hover:text-neutral-400 transition-colors duration-300;
 }

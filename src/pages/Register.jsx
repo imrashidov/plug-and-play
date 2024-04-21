@@ -1,13 +1,31 @@
+import { useState } from "react";
+import PrivacyModal from "../components/Modals/PrivacyModal";
 import { FaChevronLeft } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const [privacyModal, setPrivacyModal] = useState(false);
+
   const navigate = useNavigate();
+
+  const handleModal = (e) => {
+    e.preventDefault();
+    setPrivacyModal(!privacyModal);
+  };
+
   return (
-    <section id="login">
+    <section id="register">
+      <PrivacyModal
+        handleModal={handleModal}
+        logo={logo}
+        privacyModal={privacyModal}
+      />
       <div className="register-container">
-        <button onClick={() => navigate(-1)} className="login-previous">
+        <button
+          onClick={() => navigate(-1)}
+          className={`login-previous ${privacyModal ? "hide" : ""}`}
+        >
           <FaChevronLeft />
         </button>
         <div className="register-main">
@@ -54,16 +72,13 @@ const Register = () => {
               </select>
             </div>
             <div className="register-privacy">
-              <input
-                type="checkbox"
-                value="privacyAndPolicy"
-                id="privacyAndPolicy"
-              />
-              <label htmlFor="privacyAndPolicy">
-                I agree to Plug & Play&apos;s <Link>privacy policy</Link>
+              <input type="checkbox" value="privacyPolicy" id="privacyPolicy" />
+              <label htmlFor="privacyPolicy">
+                I agree to Plug & Play&apos;s{" "}
+                <button onClick={handleModal}>privacy policy</button>
               </label>
             </div>
-            <button>Register</button>
+            <button className="auth-button">Register</button>
           </form>
         </div>
       </div>
