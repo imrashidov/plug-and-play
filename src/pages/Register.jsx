@@ -75,7 +75,7 @@ const Register = () => {
               <input type="checkbox" value="privacyPolicy" id="privacyPolicy" />
               <label htmlFor="privacyPolicy">
                 I agree to Plug & Play&apos;s{" "}
-                <button onClick={handleModal}>privacy policy</button>
+                <span onClick={handleModal}>privacy policy</span>
               </label>
             </div>
             <button className="auth-button">Register</button>
