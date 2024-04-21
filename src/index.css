@@ -416,47 +416,47 @@ footer a {
   @apply bg-dark-secondary p-5 rounded-lg !max-w-[40rem] w-full;
 }
 .register-main form {
-  @apply mt-5 flex flex-col gap-5 h-full;
+  @apply mt-5 flex flex-col gap-0 h-full;
 }
 .register-details {
-  @apply grid grid-cols-2 gap-2;
+  @apply grid grid-cols-2 gap-2 relative;
 }
 .register-input {
-  @apply w-full flex flex-col;
+  @apply w-full flex flex-col relative pb-6;
 }
 .register-input input {
   @apply bg-neutral-600 rounded-sm h-10 px-2 py-6 outline-none placeholder:text-gray-400/25;
 }
 .register-privacy {
-  @apply flex gap-1;
+  @apply flex gap-1 mt-3 relative;
 }
 .register-privacy input {
   @apply checked:accent-neutral-700;
 }
 .register-privacy label {
-  @apply text-sm text-neutral-400;
+  @apply text-sm  text-neutral-400 relative;
 }
-.register-privacy label span {
+.register-privacy span {
   @apply text-sm text-blue-300 cursor-pointer hover:text-blue-400 transition-colors duration-300;
 }
 .register-gender {
-  @apply w-fit;
+  @apply relative;
 }
 .register-gender select {
-  @apply bg-neutral-600 rounded-sm px-2 py-1 w-full mt-1 focus:outline-none;
+  @apply bg-neutral-600 rounded-sm px-2 py-1 w-fit mt-1 focus:outline-none;
 }
 .auth-button {
-  @apply bg-dark-primary rounded-sm p-2 hover:shadow-xl transition-all duration-300;
+  @apply bg-dark-primary rounded-sm p-2 mt-7 hover:shadow-xl transition-all duration-300;
 }
 /* Register Page End */
 
 /* Privacy Policy Modal Start */
 
 .privacy-modal {
-  @apply invisible opacity-0 transition-all duration-300 ease-in-out;
+  @apply invisible opacity-0 relative z-10 transition-all duration-300 ease-in-out;
 }
 .privacy-modal.show {
-  @apply visible opacity-100 transition-all duration-300;
+  @apply visible opacity-100 relative z-10 transition-all  duration-300 ease-in-out;
 }
 .privacy-container {
   @apply fixed  bg-white/20 w-full z-10 h-full justify-center flex px-5;
@@ -487,3 +487,18 @@ footer a {
 }
 
 /* Privacy Policy Modal End */
+
+/* Errors */
+
+.errors {
+  @apply text-red-300 text-sm absolute bottom-0 first-letter:capitalize;
+}
+.errors-gender {
+  @apply text-red-300 text-sm absolute right-0 first-letter:capitalize;
+}
+.errors-privacy {
+  @apply text-red-300 w-full text-sm absolute top-5  first-letter:capitalize;
+}
+.disabled-button {
+  @apply bg-dark-secondary cursor-not-allowed;
+}

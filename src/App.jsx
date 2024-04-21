@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import Register from "./pages/Register";
+import MyForm from "./pages/MyForm";
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/test" element={<MyForm />} />
         <Route path="/login/forgot-password" element={<ForgotPassword />} />
         <Route path="/login/register" element={<Register />} />
       </Routes>
