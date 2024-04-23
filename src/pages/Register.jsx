@@ -60,7 +60,6 @@ const Register = () => {
           <div className="login-text">
             <h2>Sign up</h2>
           </div>
-
           <form onSubmit={handleSubmit}>
             <div className="register-details">
               <div className="register-input">
