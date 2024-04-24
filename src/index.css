@@ -488,6 +488,27 @@ footer a {
 
 /* Privacy Policy Modal End */
 
+/* Success Page Start */
+.success {
+  @apply flex items-center justify-center h-screen;
+}
+.success-container {
+  @apply p-5 !max-w-[30rem] w-full;
+}
+.success-logo {
+  @apply flex items-center justify-center gap-3 bg-green-600 p-10 rounded-t-md;
+}
+.success-text {
+  @apply flex flex-col items-center gap-10 bg-dark-secondary rounded-b-md py-14 px-20;
+}
+.success-text p {
+  @apply text-xl text-center;
+}
+.success-text button {
+  @apply bg-dark-primary p-2 rounded-md hover:shadow-xl transition-all duration-300;
+}
+/* Success Page End */
+
 /* Errors */
 
 .errors {
