@@ -29,7 +29,7 @@ export const FooterData = [
     id: 2,
     title: "Account",
     links: [
-      { id: 1, name: "Sign in", path: "/" },
+      { id: 1, name: "Sign in", path: "/login" },
       { id: 2, name: "Cart", path: "/" },
       { id: 3, name: "Wishlist", path: "/" },
     ],

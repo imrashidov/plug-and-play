@@ -332,6 +332,9 @@ footer a {
 .footer-container-bottom p {
   @apply text-sm text-neutral-400;
 }
+.footer-container-bottom a {
+  @apply font-semibold text-gray-400;
+}
 .footer-terms {
   @apply flex gap-3 text-sm text-gray-400;
 }
