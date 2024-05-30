@@ -251,10 +251,10 @@ button {
 
 /* Daily Offers Section Start */
 .daily-offers-main {
-  @apply bg-dark-secondary p-2 rounded-lg flex;
+  @apply bg-dark-secondary p-2 rounded-lg flex max-md:flex-col-reverse;
 }
 .daily-offers-left {
-  @apply flex flex-col justify-center p-10 w-full;
+  @apply flex flex-col justify-center p-10 w-full max-md:p-2;
 }
 .daily-offers-left h2 {
   @apply text-3xl;
