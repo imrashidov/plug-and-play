@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SliderData from "../data/SliderData";
+import SliderData from "~/data/SliderData";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 

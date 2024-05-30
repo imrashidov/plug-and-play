@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import daily1 from "../assets/DailyOffers/daily1.png";
+import daily1 from "~/assets/DailyOffers/daily1.png";
 
 const DailyOffers = () => {
   const [time, setTime] = useState(24 * 60 * 60);

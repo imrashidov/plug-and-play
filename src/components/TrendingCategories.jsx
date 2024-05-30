@@ -1,4 +1,4 @@
-import TrendingCategoriesData from "../data/TrendingCategoriesData";
+import TrendingCategoriesData from "~/data/TrendingCategoriesData";
 import { Link } from "react-router-dom";
 
 const TrendingCategories = () => {

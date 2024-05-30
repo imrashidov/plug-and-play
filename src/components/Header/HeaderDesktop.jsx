@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import PagesData from "../../data/PagesData";
+import PagesData from "~/data/PagesData";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
 import { CiLogin } from "react-icons/ci";
-import logo from "../../assets/logo.png";
+import logo from "~/assets/logo.png";
 
 const HeaderDesktop = () => {
   return (

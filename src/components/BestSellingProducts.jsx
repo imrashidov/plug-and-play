@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BestSellingProductsData from "../data/BestSellingProductsData";
+import BestSellingProductsData from "~/data/BestSellingProductsData";
 import { Link } from "react-router-dom";
 import { MdFavoriteBorder } from "react-icons/md";
 import { MdFavorite } from "react-icons/md";
