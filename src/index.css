@@ -288,7 +288,7 @@ button {
   @apply flex flex-col items-center p-3;
 }
 .banner-item span {
-  @apply bg-dark-secondary p-2 rounded-full w-20 h-20 flex items-center justify-center;
+  @apply bg-dark-secondary p-2 rounded-full w-20 h-20 max-md:w-16 max-md:h-16 flex items-center justify-center;
 }
 .banner-item-logo svg {
   @apply w-full h-full p-2;
@@ -297,10 +297,10 @@ button {
   @apply mt-7;
 }
 .banner-item-text h4 {
-  @apply uppercase text-xl max-md:text-lg;
+  @apply uppercase text-xl max-md:text-base;
 }
 .banner-item-text p {
-  @apply text-gray-400 text-sm;
+  @apply text-gray-400 text-sm max-md:text-xs;
 }
 
 /* Banner Section End */
@@ -316,16 +316,16 @@ footer a {
   @apply flex gap-10;
 }
 .footer-logo {
-  @apply h-fit shrink-0;
+  @apply h-fit shrink-0 max-md:hidden;
 }
 .footer-logo img {
   @apply w-14 h-14 invert;
 }
 .footer-main-top {
-  @apply w-full flex justify-between;
+  @apply w-full flex justify-between max-lg:flex-col max-lg:gap-4;
 }
 .footer-links-main {
-  @apply flex gap-20;
+  @apply flex gap-20 max-lg:gap-3 max-lg:w-full max-lg:justify-between max-sm:grid max-sm:grid-cols-2;
 }
 .footer-links {
   @apply flex flex-col gap-2;
@@ -334,17 +334,20 @@ footer a {
 .footer-support h6 {
   @apply text-gray-400 font-semibold mb-3;
 }
+.footer-links li {
+  @apply max-md:text-sm;
+}
 .footer-support {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col gap-2 max-md:text-sm;
 }
 .footer-socials {
-  @apply flex h-fit gap-3;
+  @apply flex h-fit gap-3 max-lg:self-end;
 }
 .social-links svg {
   @apply text-gray-400  h-7 w-7 hover:fill-dark-primary transition-all duration-300;
 }
 .footer-container-bottom {
-  @apply border-t-2 mt-16 border-neutral-700 pt-2 flex justify-between gap-2;
+  @apply border-t-2 mt-16 border-neutral-700 pt-2 flex justify-between gap-2 max-lg:flex-col max-lg:mt-2;
 }
 .footer-container-bottom p {
   @apply text-sm text-neutral-400;
