@@ -280,7 +280,7 @@ button {
 /* Banner Section Start */
 
 .banner-main {
-  @apply text-center flex  justify-center gap-20;
+  @apply text-center flex justify-center gap-20 max-md:gap-2;
 }
 .banner-item {
   @apply flex flex-col items-center p-3;
@@ -295,7 +295,7 @@ button {
   @apply mt-7;
 }
 .banner-item-text h4 {
-  @apply uppercase text-xl;
+  @apply uppercase text-xl max-md:text-lg;
 }
 .banner-item-text p {
   @apply text-gray-400 text-sm;
