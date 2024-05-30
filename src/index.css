@@ -257,23 +257,25 @@ button {
   @apply flex flex-col justify-center p-10 w-full max-md:p-2;
 }
 .daily-offers-left h2 {
-  @apply text-3xl;
+  @apply text-3xl max-md:text-2xl;
 }
 .daily-offers-left p {
-  @apply text-gray-400;
+  @apply text-gray-400 max-md:text-sm;
 }
-
 .daily-offers-countdown {
-  @apply flex gap-5 w-fit mt-10;
+  @apply flex gap-5 w-fit mt-10 max-md:mt-4;
 }
 .daily-offers-countdown__item {
   @apply bg-dark-primary rounded-full  items-center justify-center flex flex-col p-2 w-20 h-20 text-sm text-center;
 }
 .daily-offers-main button {
-  @apply mt-10 w-fit px-3 py-2 bg-dark-primary rounded-lg shadow-dark-primary shadow-md hover:shadow-lg hover:shadow-dark-primary transition-all duration-300;
+  @apply mt-10 max-md:mt-5 w-fit px-3 py-2 bg-dark-primary rounded-lg shadow-dark-primary shadow-md hover:shadow-lg hover:shadow-dark-primary transition-all duration-300;
 }
 .daily-offers-img {
-  @apply flex items-center w-full;
+  @apply flex items-center justify-center w-full;
+}
+.daily-offers-img img {
+  @apply max-md:w-[30rem];
 }
 /* Daily Offers Section End */
 
