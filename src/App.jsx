@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
@@ -10,7 +10,7 @@ function App() {
   const location = useLocation();
   return (
     <>
-      {location.pathname.includes("/login") || <Navbar />}
+      {location.pathname.includes("/login") || <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
