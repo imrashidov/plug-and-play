@@ -20,15 +20,11 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="nav-tools">
-            <div className="flex relative ">
-              <input
-                type="text"
-                placeholder="What are you looking for ?"
-                className="p-3 text-center outline-none bg-transparent border-2 rounded-2xl border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent"
-              />
-              <i className="absolute h-full right-0 p-2 flex items-center  ">
-                <FiSearch className="stroke-neutral-600 text-xl" />
-              </i>
+            <div className="nav-search">
+              <input type="text" placeholder="What are you looking for ?" />
+              <button>
+                <FiSearch />
+              </button>
             </div>
             <Link to="/">
               <FiShoppingCart />

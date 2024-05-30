@@ -52,7 +52,7 @@ const Register = () => {
         <div className="success">
           <div className="success-container">
             <div className="success-logo">
-              <GrStatusGood className="w-52 h-52" />
+              <GrStatusGood />
             </div>
             <div className="success-text">
               <p>
