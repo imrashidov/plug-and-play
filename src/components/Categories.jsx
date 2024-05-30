@@ -6,7 +6,7 @@ const Categories = () => {
     <section>
       <div className="container">
         <h2 className="section-title">Categories</h2>
-        <div className="flex gap-12">
+        <div className="categories">
           <CategoriesSidebar />
           <Slider />
         </div>

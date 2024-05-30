@@ -31,13 +31,13 @@ input::-webkit-inner-spin-button {
 * {
   @apply no-underline;
 }
-
 body {
   @apply bg-dark-primary bg-no-repeat h-full text-white;
 }
 .container {
   @apply mx-auto px-3 py-10;
 }
+
 /* Navbar Start */
 nav {
   @apply sticky top-0 z-[999];
@@ -56,11 +56,11 @@ nav ul {
 nav img {
   @apply invert hover:scale-90 h-11;
 }
+.nav-main {
+  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14;
+}
 .nav-container {
   @apply flex justify-center pb-4;
-}
-.nav-main {
-  @apply bg-dark-secondary/95 flex justify-start gap-10 w-full px-5 py-3 rounded-b-lg mx-14;
 }
 .nav-tools {
   @apply flex gap-5 ml-auto items-center;
@@ -136,6 +136,9 @@ button {
 /* Trending Categories End */
 
 /* Categories Section Start */
+.categories {
+  @apply flex gap-12 max-lg:grid max-lg:gap-5;
+}
 
 .categories-main {
   @apply bg-dark-secondary px-4 py-2 rounded-lg;
@@ -217,10 +220,10 @@ button {
   @apply bg-dark-primary hover:bg-zinc-700 duration-300 transition-all w-7 h-7 rounded-full absolute right-2 top-2 z-10 flex justify-center items-center;
 }
 .bsp-products {
-  @apply flex justify-between gap-4 w-full;
+  @apply flex justify-between gap-4 w-full max-lg:grid-cols-2 max-lg:grid;
 }
 .bsp-product {
-  @apply p-3 bg-dark-secondary rounded-lg cursor-pointer  transition-all duration-300;
+  @apply p-3 bg-dark-secondary rounded-lg cursor-pointer  transition-all duration-300 flex justify-center;
 }
 
 .bsp-product img {
