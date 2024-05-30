@@ -51,16 +51,16 @@ nav button {
   @apply flex items-center gap-2;
 }
 nav ul {
-  @apply flex gap-4 self-center;
+  @apply flex gap-4 self-center max-lg:hidden;
 }
 nav img {
   @apply invert hover:scale-90 h-11;
 }
-.nav-main {
-  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14;
-}
 .nav-container {
-  @apply flex justify-center pb-4;
+  @apply flex justify-center;
+}
+.nav-main {
+  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3;
 }
 .nav-tools {
   @apply flex gap-5 ml-auto items-center;
@@ -70,7 +70,7 @@ button {
   @apply text-xl;
 }
 .nav-search {
-  @apply flex relative;
+  @apply flex relative max-lg:hidden;
 }
 .nav-search input {
   @apply p-3 text-center outline-none bg-transparent border-2 rounded-2xl border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
@@ -89,13 +89,13 @@ button {
 
 /* Hero Section Start */
 #hero {
-  @apply bg-hero-pattern bg-left-top bg-cover h-full;
+  @apply bg-hero-pattern bg-cover bg-center h-full;
 }
 .hero-main {
-  @apply flex gap-52 items-center py-24 px-10 my-20;
+  @apply flex items-center gap-52 py-24 px-10 max-lg:p-0 max-lg:my-0 xl:h-screen max-lg:flex-col-reverse max-lg:gap-6 max-lg:justify-end;
 }
 .hero-text {
-  @apply w-full py-10 px-20 flex flex-col gap-7;
+  @apply w-full py-10 px-20 flex flex-col gap-7 max-lg:px-0 h-fit;
 }
 .hero-text h3 {
   @apply text-3xl;
@@ -110,10 +110,10 @@ button {
   @apply text-lg bg-dark-secondary/[0.6] hover:bg-dark-secondary px-3 py-2 rounded-lg transition-all duration-300;
 }
 .hero-photos {
-  @apply p-2 rounded-2xl relative max-h-[40rem] z-0;
+  @apply p-2 rounded-2xl relative max-h-[20rem] z-0 w-fit;
 }
 .hero-photo1 {
-  @apply w-[50rem] mt-24;
+  @apply w-[50rem] max-lg:w-[20rem] mt-24;
 }
 .hero-photo2 {
   @apply w-52 absolute top-3 left-3 z-[-1];

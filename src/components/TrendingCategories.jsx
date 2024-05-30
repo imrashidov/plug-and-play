@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TrendingCategories = () => {
   return (
-    <section id="Trend">
+    <section id="trend">
       <div className="container">
         <div className="trending-main">
           <h2 className="section-title">Trending Categories</h2>

@@ -3,7 +3,7 @@ import Slider from "./Slider";
 
 const Categories = () => {
   return (
-    <section>
+    <section id="categories-slider">
       <div className="container">
         <h2 className="section-title">Categories</h2>
         <div className="categories">
