@@ -1,20 +1,11 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import pagesData from "~/data/PagesData";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
-import { IoChevronDown } from "react-icons/io5";
 import logo from "~/assets/logo.png";
 import HeaderMobile from "./HeaderMobile";
-import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [dropDownActive, setDropDownActive] = useState(false);
-
-  const toggleDropDown = () => {
-    setDropDownActive(!dropDownActive);
-  };
-
   return (
     <header id="navbar">
       <div className="nav-container">
