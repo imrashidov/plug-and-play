@@ -65,12 +65,3 @@ const HeaderMobile = () => {
 };
 
 export default HeaderMobile;
-
-{
-  /* <Link to="/">
-<FiShoppingCart />
-</Link>
-<Link to="/login" className="nav-mobile-login">
-<IoLogInSharp />
-</Link> */
-}
