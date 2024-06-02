@@ -38,32 +38,32 @@ body {
   @apply mx-auto px-3 py-10;
 }
 
-/* Navbar Start */
-nav {
+/* Header Desktop */
+header {
   @apply sticky top-0 z-[999];
 }
-nav button,
+header button,
 img,
-nav a {
+header a {
   @apply hover:text-gray-400 transition-all duration-300 text-lg;
 }
-nav button {
+header button {
   @apply flex items-center gap-2;
 }
-nav ul {
-  @apply flex gap-4 self-center max-lg:hidden;
-}
-nav img {
+header img {
   @apply invert hover:scale-90 h-11;
 }
 .nav-container {
   @apply flex justify-center;
 }
 .nav-main {
-  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3;
+  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3 relative;
+}
+.nav-links {
+  @apply flex gap-4 self-center max-md:hidden;
 }
 .nav-tools {
-  @apply flex gap-5 ml-auto items-center;
+  @apply flex gap-5 ml-auto items-center max-lg:hidden;
 }
 .nav-tools a,
 button {
@@ -84,8 +84,11 @@ button {
 .nav-sign {
   @apply px-4 py-2 bg-dark-primary rounded-xl !text-lg hover:bg-dark-primary/[0.7] hover:text-white;
 }
+.nav-mobile-main {
+  @apply lg:hidden ml-auto flex items-center justify-center gap-4;
+}
 
-/* Navbar End */
+/* Header End */
 
 /* Hero Section Start */
 #hero {
