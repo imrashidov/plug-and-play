@@ -84,8 +84,14 @@ button {
 .nav-sign {
   @apply px-4 py-2 bg-dark-primary rounded-xl !text-lg hover:bg-dark-primary/[0.7] hover:text-white;
 }
-.nav-mobile-main {
-  @apply lg:hidden ml-auto flex items-center justify-center gap-4;
+.nav-mobile-menu {
+  @apply lg:hidden ml-auto flex items-center justify-center gap-2;
+}
+.nav-mobile-login svg {
+  @apply w-10 h-10;
+}
+.nav-mobile-login svg:focus {
+  @apply fill-gray-400 transition-all duration-300;
 }
 
 /* Header End */
