@@ -3,32 +3,38 @@ import { Link } from "react-router-dom";
 import pagesData from "~/data/PagesData";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
+import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 import logo from "~/assets/logo.png";
 import HeaderMenuButton from "./HeaderMenuButton";
 import { motion } from "framer-motion";
 
-const navContainer = {
+const dropdownMenu = {
   open: { height: "50vh" },
   closed: {},
 };
-const navLinks = {
+const dropdownContent = {
   open: { opacity: 1, display: "block" },
   closed: { opacity: 0, display: "none" },
 };
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
+  };
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
   };
 
   return (
     <header>
       <motion.div
         className="nav-container"
-        animate={isOpen ? navContainer.open : navContainer.closed}
+        animate={isOpen ? dropdownMenu.open : dropdownMenu.closed}
         transition={{
           ease: "linear",
           duration: 0.1,
@@ -53,7 +59,7 @@ const Navbar = () => {
               ease: "linear",
               duration: isOpen ? 1 : 0,
             }}
-            animate={isOpen ? navLinks.open : navLinks.closed}
+            animate={isOpen ? dropdownContent.open : dropdownContent.closed}
           >
             <motion.ul>
               {pagesData.map((page) => (
@@ -83,6 +89,21 @@ const Navbar = () => {
             <Link className="nav-sign" to="/login">
               Sign in
             </Link>
+            {/* Dark Mode Switch Start */}
+            <div
+              className="nav-switch"
+              data-darkMode={darkMode}
+              onClick={toggleDarkMode}
+            >
+              <motion.div
+                className="darkHandle"
+                layout
+                transition={{ type: "spring", stiffness: 700, damping: 30 }}
+              >
+                {darkMode ? <MdDarkMode /> : <MdLightMode />}
+              </motion.div>
+              {/* Dark Mode Switch End */}
+            </div>
           </div>
         </div>
       </motion.div>

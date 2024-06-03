@@ -4,28 +4,25 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  @apply m-0;
 }
 ::-webkit-scrollbar {
-  width: 7px;
+  @apply w-[7px];
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #292929;
-  border-radius: 5px;
+  @apply bg-[#292929] rounded-[5px];
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #191919;
-  border-radius: 5px;
+  @apply rounded-[5px] bg-[#191919];
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  @apply bg-[#555];
 }
 
 * {
@@ -41,7 +38,23 @@ body {
   @apply mx-auto px-3 py-10;
 }
 
+/* Dark Mode Switch */
+
+.nav-switch {
+  @apply w-[50px] h-[30px] bg-dark-primary flex justify-start items-center rounded-[50px] p-[5px] cursor-pointer;
+}
+.nav-switch[data-darkMode="true"] {
+  @apply justify-end;
+}
+.darkHandle {
+  @apply w-[20px] h-[20px] bg-white rounded-[40px] flex items-center justify-center;
+}
+.darkHandle svg {
+  @apply fill-dark-secondary;
+}
+
 /* Header Desktop */
+
 header {
   @apply sticky top-0 z-[999] max-lg:pb-16;
 }
@@ -106,7 +119,7 @@ button {
   @apply flex items-center gap-52 py-24 px-10 max-lg:p-0 max-lg:my-0 xl:h-screen max-lg:flex-col-reverse max-lg:gap-6 max-lg:justify-end;
 }
 .hero-text {
-  @apply w-full py-10 px-20 flex flex-col gap-7 max-lg:px-0 h-fit;
+  @apply w-full py-10 px-20 flex flex-col gap-7 max-lg:px-0 h-fit select-none;
 }
 .hero-text h3 {
   @apply text-3xl;
@@ -121,7 +134,7 @@ button {
   @apply text-lg bg-dark-secondary/[0.6] hover:bg-dark-secondary px-3 py-2 rounded-lg transition-all duration-300;
 }
 .hero-photos {
-  @apply p-2 rounded-2xl relative max-h-[20rem] z-0 w-fit;
+  @apply p-2 rounded-2xl relative max-h-[20rem] z-0 w-fit select-none;
 }
 .hero-photo1 {
   @apply w-[50rem] max-lg:w-[20rem] mt-24;
