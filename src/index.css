@@ -31,6 +31,9 @@ input::-webkit-inner-spin-button {
 * {
   @apply no-underline;
 }
+html {
+  @apply scroll-smooth;
+}
 body {
   @apply bg-dark-primary bg-no-repeat h-full text-white;
 }
@@ -40,7 +43,7 @@ body {
 
 /* Header Desktop */
 header {
-  @apply sticky top-0 z-[999];
+  @apply sticky top-0 z-[999] max-lg:pb-16;
 }
 header button,
 img,
@@ -54,13 +57,19 @@ header img {
   @apply invert hover:scale-90 h-11;
 }
 .nav-container {
-  @apply flex justify-center;
+  @apply flex justify-center  top-0 w-full max-lg:absolute;
 }
 .nav-main {
-  @apply bg-dark-secondary/95 flex items-center gap-10 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3 relative;
+  @apply bg-dark-secondary/95 relative flex items-center gap-10 max-lg:gap-5 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3  max-lg:flex-col;
+}
+.nav-dropdown-container {
+  @apply max-lg:w-full flex  justify-between;
+}
+.nav-dropdown-menu {
+  @apply lg:hidden w-full border-t border-light-primary py-2 h-full;
 }
 .nav-links {
-  @apply flex gap-4 self-center max-md:hidden;
+  @apply flex gap-4 self-center max-lg:hidden;
 }
 .nav-tools {
   @apply flex gap-5 ml-auto items-center max-lg:hidden;
@@ -84,16 +93,9 @@ button {
 .nav-sign {
   @apply px-4 py-2 bg-dark-primary rounded-xl !text-lg hover:bg-dark-primary/[0.7] hover:text-white;
 }
-.nav-mobile-menu {
-  @apply lg:hidden ml-auto flex items-center justify-center gap-2;
+.nav-mobile-menu-button {
+  @apply lg:hidden;
 }
-.nav-mobile-login svg {
-  @apply w-10 h-10;
-}
-.nav-mobile-login svg:focus {
-  @apply fill-gray-400 transition-all duration-300;
-}
-
 /* Header End */
 
 /* Hero Section Start */
