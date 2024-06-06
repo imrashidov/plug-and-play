@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 
 function App() {
   const location = useLocation();
+
   return (
     <>
       {location.pathname.includes("/login") || <Header />}

@@ -67,7 +67,7 @@ header button {
   @apply flex items-center gap-2;
 }
 .nav-logo {
-  @apply invert hover:scale-90 h-11;
+  @apply invert hover:scale-90 h-11 shrink-0;
 }
 .nav-container {
   @apply flex justify-center top-0 w-full max-lg:absolute lg:!h-fit;
@@ -84,13 +84,19 @@ header button {
 /* Nav dropdown Start */
 
 .nav-dropdown-container {
-  @apply max-lg:w-full flex justify-between;
+  @apply max-lg:w-full flex justify-between items-center;
+}
+.nav-dropdown-container a:first-child {
+  @apply shrink-0;
 }
 .nav-dropdown-container-buttons {
-  @apply lg:hidden flex gap-6;
+  @apply lg:hidden flex gap-6 items-center;
 }
 .nav-dropdown-search svg {
   @apply w-7 h-7;
+}
+.nav-dropdown-search input {
+  @apply p-1 text-center outline-none bg-transparent border rounded-lg border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
 }
 .nav-dropdown-menu {
   @apply lg:!hidden w-full h-full border-t border-gray-400/30;

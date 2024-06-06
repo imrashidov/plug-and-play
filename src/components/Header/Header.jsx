@@ -12,10 +12,32 @@ const dropdownMenu = {
   open: { height: "50vh" },
   closed: {},
 };
+const searchButton = {
+  open: {
+    translateX: "10px",
+    rotate: "360deg",
+    scale: 0.7,
+    display: "block",
+    color: "#525252",
+    zIndex: 100,
+  },
+  closed: {},
+};
+const searchInput = {
+  open: {
+    width: "100%",
+    opacity: 1,
+    translateX: "0px",
+    display: "block",
+    paddingLeft: "10px",
+  },
+  closed: { display: "none", opacity: 0, width: "0px", scale: 0 },
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const [searchModal, setSearchModal] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -23,6 +45,10 @@ const Navbar = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+  };
+
+  const toggleSearchModal = () => {
+    setSearchModal(!searchModal);
   };
 
   return (
@@ -35,15 +61,45 @@ const Navbar = () => {
           duration: 0.1,
         }}
       >
-        <div className="nav-main relative">
+        <div className="nav-main">
           <div className="nav-dropdown-container">
             <Link to="/">
               <img src={logo} alt="logo" className="nav-logo" />
             </Link>
+            {/* Search Input Start */}
+            <motion.div
+              className="nav-dropdown-search"
+              animate={searchModal ? searchInput.open : searchInput.closed}
+              transition={{
+                ease: "linear",
+                duration: 0.1,
+              }}
+            >
+              <motion.input
+                type="text"
+                placeholder="Search..."
+                animate={searchModal ? searchInput.open : searchInput.closed}
+                transition={{
+                  ease: "linear",
+                  duration: 0.1,
+                }}
+              />
+            </motion.div>
+            {/* Search Input End */}
             <div className="nav-dropdown-container-buttons">
-              <button className="nav-dropdown-search">
+              {/* Search Button Start */}
+              <motion.button
+                className="nav-dropdown-search"
+                onClick={toggleSearchModal}
+                animate={searchModal ? searchButton.open : searchButton.closed}
+                transition={{
+                  ease: "linear",
+                  duration: 0.1,
+                }}
+              >
                 <FiSearch />
-              </button>
+              </motion.button>
+              {/* Search Button End */}
               {/* Mobile Menu Button Start */}
               <motion.button
                 className="nav-mobile-menu-button"
@@ -59,6 +115,8 @@ const Navbar = () => {
             pagesData={pagesData}
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
+            searchModal={searchModal}
+            toggleSearchModal={toggleSearchModal}
           />
           <ul className="nav-links">
             {pagesData.map((page) => (
