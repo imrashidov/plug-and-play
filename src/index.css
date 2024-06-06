@@ -66,20 +66,14 @@ header a {
 header button {
   @apply flex items-center gap-2;
 }
-header img {
+.nav-logo {
   @apply invert hover:scale-90 h-11;
 }
 .nav-container {
-  @apply flex justify-center  top-0 w-full max-lg:absolute;
+  @apply flex justify-center top-0 w-full max-lg:absolute lg:!h-fit;
 }
 .nav-main {
   @apply bg-dark-secondary/95 relative flex items-center gap-10 max-lg:gap-5 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3  max-lg:flex-col;
-}
-.nav-dropdown-container {
-  @apply max-lg:w-full flex  justify-between;
-}
-.nav-dropdown-menu {
-  @apply lg:hidden w-full border-t border-light-primary py-2 h-full;
 }
 .nav-links {
   @apply flex gap-4 self-center max-lg:hidden;
@@ -87,6 +81,67 @@ header img {
 .nav-tools {
   @apply flex gap-5 ml-auto items-center max-lg:hidden;
 }
+/* Nav dropdown Start */
+
+.nav-dropdown-container {
+  @apply max-lg:w-full flex justify-between;
+}
+.nav-dropdown-container-buttons {
+  @apply lg:hidden flex gap-6;
+}
+.nav-dropdown-search svg {
+  @apply w-7 h-7;
+}
+.nav-dropdown-menu {
+  @apply lg:!hidden w-full h-full border-t border-gray-400/30;
+}
+.nav-dropdown-main {
+  @apply flex flex-col justify-between h-full w-full;
+}
+.nav-dropdown-content {
+  @apply flex h-full gap-0 my-2;
+}
+.nav-dropdown-content ul {
+  @apply border-r border-gray-400/30 flex flex-col gap-1 pr-4 w-fit;
+}
+.nav-dropdown-switch {
+  @apply self-end;
+}
+.nav-dropdown-account {
+  @apply flex flex-col w-full px-2;
+}
+.nav-dropdown-account .nav-account img {
+  @apply w-16 h-full md:w-20 md:h-20;
+}
+.nav-account {
+  @apply w-full flex flex-col gap-2 overflow-hidden;
+}
+.nav-account .nav-account-info p {
+  @apply text-[10px] md:text-sm;
+}
+.nav-account .nav-account-info span {
+  @apply text-gray-400;
+}
+.nav-account img {
+  @apply rounded-lg;
+}
+.nav-account img:hover {
+  @apply scale-105 cursor-pointer;
+}
+.nav-account-details {
+  @apply flex gap-1;
+}
+.nav-account-settings {
+  @apply flex flex-col gap-2 h-full;
+}
+.nav-account-settings a {
+  @apply flex items-center gap-1 text-lg;
+}
+.nav-account-settings .logout svg {
+  @apply text-red-400;
+}
+
+/* Nav dropdown End */
 .nav-tools a,
 button {
   @apply text-xl;

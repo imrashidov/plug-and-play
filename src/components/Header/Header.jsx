@@ -1,21 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 import pagesData from "~/data/PagesData";
-import { FiSearch } from "react-icons/fi";
-import { FiShoppingCart } from "react-icons/fi";
-import { MdDarkMode } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
 import logo from "~/assets/logo.png";
 import HeaderMenuButton from "./HeaderMenuButton";
-import { motion } from "framer-motion";
+import HeaderMenu from "./HeaderMenu";
 
 const dropdownMenu = {
   open: { height: "50vh" },
   closed: {},
-};
-const dropdownContent = {
-  open: { opacity: 1, display: "block" },
-  closed: { opacity: 0, display: "none" },
 };
 
 const Navbar = () => {
@@ -40,35 +35,31 @@ const Navbar = () => {
           duration: 0.1,
         }}
       >
-        <div className="nav-main">
+        <div className="nav-main relative">
           <div className="nav-dropdown-container">
             <Link to="/">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className="nav-logo" />
             </Link>
-            {/* Mobile Menu Button */}
-            <motion.button
-              className="nav-mobile-menu-button"
-              onClick={toggleOpen}
-            >
-              <HeaderMenuButton isOpen={isOpen} />
-            </motion.button>
+            <div className="nav-dropdown-container-buttons">
+              <button className="nav-dropdown-search">
+                <FiSearch />
+              </button>
+              {/* Mobile Menu Button Start */}
+              <motion.button
+                className="nav-mobile-menu-button"
+                onClick={toggleOpen}
+              >
+                <HeaderMenuButton isOpen={isOpen} />
+              </motion.button>
+              {/* Mobile Menu Button End */}
+            </div>
           </div>
-          <motion.div
-            className="nav-dropdown-menu"
-            transition={{
-              ease: "linear",
-              duration: isOpen ? 1 : 0,
-            }}
-            animate={isOpen ? dropdownContent.open : dropdownContent.closed}
-          >
-            <motion.ul>
-              {pagesData.map((page) => (
-                <li key={page.id}>
-                  <Link to={page.path}>{page.title}</Link>
-                </li>
-              ))}
-            </motion.ul>
-          </motion.div>
+          <HeaderMenu
+            isOpen={isOpen}
+            pagesData={pagesData}
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+          />
           <ul className="nav-links">
             {pagesData.map((page) => (
               <li key={page.id}>
