@@ -141,7 +141,7 @@ const Navbar = () => {
             {/* Dark Mode Switch Start */}
             <div
               className="nav-switch"
-              data-darkMode={darkMode}
+              data-dark={darkMode}
               onClick={toggleDarkMode}
             >
               <motion.div
