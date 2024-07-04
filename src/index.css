@@ -43,7 +43,7 @@ body {
 .nav-switch {
   @apply w-[50px] h-[30px] bg-dark-primary flex justify-start items-center rounded-[50px] p-[5px] cursor-pointer;
 }
-.nav-switch[data-darkMode="true"] {
+.nav-switch[data-dark="true"] {
   @apply justify-end;
 }
 .darkHandle {
