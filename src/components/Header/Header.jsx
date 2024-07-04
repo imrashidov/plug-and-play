@@ -101,12 +101,7 @@ const Navbar = () => {
               </motion.button>
               {/* Search Button End */}
               {/* Mobile Menu Button Start */}
-              <motion.button
-                className="nav-mobile-menu-button"
-                onClick={toggleOpen}
-              >
-                <HeaderMenuButton isOpen={isOpen} />
-              </motion.button>
+              <HeaderMenuButton isOpen={isOpen} toggleOpen={toggleOpen} />
               {/* Mobile Menu Button End */}
             </div>
           </div>

@@ -90,7 +90,7 @@ header button {
   @apply shrink-0;
 }
 .nav-dropdown-container-buttons {
-  @apply lg:hidden flex gap-6 items-center;
+  @apply gap-6 items-center flex lg:scale-0 lg:invisible lg:w-0;
 }
 .nav-dropdown-search svg {
   @apply w-7 h-7;
@@ -169,9 +169,6 @@ button {
 }
 .nav-sign {
   @apply px-4 py-2 bg-dark-primary rounded-xl !text-lg hover:bg-dark-primary/[0.7] hover:text-white;
-}
-.nav-mobile-menu-button {
-  @apply lg:hidden;
 }
 /* Header End */
 

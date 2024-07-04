@@ -1,9 +1,9 @@
 import propTypes from "prop-types";
 import { motion } from "framer-motion";
 
-const HeaderMenuButton = ({ isOpen }) => {
+const HeaderMenuButton = ({ isOpen, toggleOpen }) => {
   return (
-    <>
+    <motion.button onClick={toggleOpen} className="nav-dropdown-button">
       <motion.svg width="30" height="30" viewBox="0 0 23 23">
         <motion.line
           x1="0"
@@ -19,6 +19,10 @@ const HeaderMenuButton = ({ isOpen }) => {
               rotate: "45deg",
               translateY: "10px",
             },
+            closed: {
+              rotate: "0deg",
+              translateY: "0px",
+            },
           }}
         />
         <motion.line
@@ -33,6 +37,9 @@ const HeaderMenuButton = ({ isOpen }) => {
           variants={{
             open: {
               scale: 0,
+            },
+            closed: {
+              scale: 1,
             },
           }}
         />
@@ -50,10 +57,14 @@ const HeaderMenuButton = ({ isOpen }) => {
               rotate: "-45deg",
               translateY: "-10px",
             },
+            closed: {
+              rotate: "0deg",
+              translateY: "0px",
+            },
           }}
         />
       </motion.svg>
-    </>
+    </motion.button>
   );
 };
 
