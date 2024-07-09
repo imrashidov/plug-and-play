@@ -50,6 +50,7 @@ const Navbar = () => {
 
   const toggleSearchModal = () => {
     setSearchModal(!searchModal);
+    setIsOpen(false);
   };
 
   useEffect(() => {
