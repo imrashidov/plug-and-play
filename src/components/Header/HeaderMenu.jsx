@@ -79,7 +79,7 @@ const HeaderMenu = ({
           </div>
           <div
             className="nav-dropdown-switch nav-switch"
-            data-darkMode={darkMode}
+            data-dark={darkMode}
             onClick={toggleDarkMode}
           >
             <motion.div
@@ -101,7 +101,7 @@ export default HeaderMenu;
 HeaderMenu.propTypes = {
   isOpen: propTypes.bool,
   darkMode: propTypes.bool,
-  toggleDarkMode: propTypes.bool,
+  toggleDarkMode: propTypes.func,
   searchModal: propTypes.bool,
   pagesData: propTypes.array,
 };
