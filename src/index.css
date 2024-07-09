@@ -156,13 +156,13 @@ button {
   @apply text-xl;
 }
 .nav-search {
-  @apply flex relative max-lg:hidden;
+  @apply flex relative max-lg:hidden justify-center items-center border-2 rounded-2xl border-neutral-600;
 }
 .nav-search input {
-  @apply p-3 text-center outline-none bg-transparent border-2 rounded-2xl border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
+  @apply py-3 pl-2 text-center outline-none bg-transparent text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
 }
 .nav-search button {
-  @apply absolute h-full right-0 p-2 flex items-center;
+  @apply h-full right-0 p-2 flex items-center;
 }
 .nav-search button svg {
   @apply stroke-neutral-600 text-xl hover:stroke-neutral-400 transition-all duration-300;

@@ -19,7 +19,6 @@ const HeaderMenu = ({
   toggleDarkMode,
   searchModal,
 }) => {
-  console.log(isOpen);
   return (
     <>
       {searchModal && <SearchModal />}
