@@ -42,6 +42,7 @@ const Navbar = () => {
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
+    setSearchModal(false);
   };
 
   const toggleDarkMode = () => {

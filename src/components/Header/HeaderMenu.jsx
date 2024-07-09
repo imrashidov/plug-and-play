@@ -26,7 +26,7 @@ const HeaderMenu = ({
         className="nav-dropdown-menu "
         transition={{
           ease: "linear",
-          duration: isOpen ? 1 : 0,
+          duration: isOpen ? 1.5 : 0,
         }}
         animate={isOpen ? dropdownContent.open : dropdownContent.closed}
       >
