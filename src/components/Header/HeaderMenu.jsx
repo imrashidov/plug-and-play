@@ -8,7 +8,7 @@ import SearchModal from "~/components/Modals/SearchModal";
 import profilePicture from "~/assets/profile-picture.jpg";
 
 const dropdownContent = {
-  open: { opacity: 1, display: "block" },
+  open: { opacity: 1, display: "block", visibility: "visible" },
   closed: { opacity: 0, display: "none" },
 };
 

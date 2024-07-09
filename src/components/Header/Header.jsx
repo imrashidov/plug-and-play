@@ -10,7 +10,7 @@ import HeaderMenu from "./HeaderMenu";
 
 const dropdownMenu = {
   open: { height: "50vh" },
-  closed: {},
+  closed: { height: "68px" },
 };
 const searchButton = {
   open: {
@@ -30,6 +30,7 @@ const searchInput = {
     translateX: "0px",
     display: "block",
     paddingLeft: "10px",
+    visibility: "visible",
   },
   closed: { display: "none", opacity: 0, width: "0px", scale: 0 },
 };

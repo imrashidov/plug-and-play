@@ -70,7 +70,7 @@ header button {
   @apply invert hover:scale-90 h-11 shrink-0;
 }
 .nav-container {
-  @apply flex justify-center top-0 w-full max-lg:absolute lg:!h-fit;
+  @apply flex justify-center top-0 w-full max-lg:absolute lg:!h-fit h-[68px];
 }
 .nav-main {
   @apply bg-dark-secondary/95 relative flex items-center gap-10 max-lg:gap-5 w-full px-5 py-3 rounded-b-lg mx-14 max-lg:mx-3  max-lg:flex-col;
@@ -96,13 +96,13 @@ header button {
   @apply w-7 h-7;
 }
 .nav-dropdown-search input {
-  @apply p-1 text-center outline-none bg-transparent border rounded-lg border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
+  @apply invisible w-0 p-1 text-center outline-none bg-transparent border rounded-lg border-neutral-600 text-neutral-400 text-base placeholder:text-xs placeholder:text-neutral-300 placeholder:text-left focus:placeholder:text-transparent;
 }
 .nav-dropdown-search {
   @apply lg:!hidden;
 }
 .nav-dropdown-menu {
-  @apply lg:!hidden w-full h-full border-t border-gray-400/30;
+  @apply lg:!hidden w-full h-full border-t border-gray-400/30 invisible;
 }
 .nav-dropdown-main {
   @apply flex flex-col justify-between h-full w-full;
