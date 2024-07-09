@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
@@ -38,6 +38,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const [searchModal, setSearchModal] = useState(false);
+  const location = useLocation();
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -50,6 +51,10 @@ const Navbar = () => {
   const toggleSearchModal = () => {
     setSearchModal(!searchModal);
   };
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <header>
@@ -111,7 +116,6 @@ const Navbar = () => {
             darkMode={darkMode}
             toggleDarkMode={toggleDarkMode}
             searchModal={searchModal}
-            toggleSearchModal={toggleSearchModal}
           />
           <ul className="nav-links">
             {pagesData.map((page) => (
