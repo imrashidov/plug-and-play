@@ -5,6 +5,7 @@ import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { HiLogout } from "react-icons/hi";
 import { FaUser, FaShoppingBasket } from "react-icons/fa";
 import SearchModal from "~/components/Modals/SearchModal";
+import profilePicture from "~/assets/profile-picture.jpg";
 
 const dropdownContent = {
   open: { opacity: 1, display: "block" },
